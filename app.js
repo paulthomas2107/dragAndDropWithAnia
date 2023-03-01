@@ -21,6 +21,7 @@ function dragStart(e) {
 
 function dragDrop(e) {
   e.target.append(beingDragged);
+  e.target.classList.remove('highlight');
 }
 
 function dragOver(e) {
@@ -40,5 +41,6 @@ function dragLeave(e) {
 }
 
 function dragEnd(e) {
-  e.target.classList.add('target')
+  e.target.classList.add('target');
+  setTimeout(() => e.target.classList.remove('target'), 200);
 }
