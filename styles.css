@@ -27,3 +27,11 @@ body {
 #info {
   height: 30px;
 }
+
+.highlight {
+  background-color: rgb(233, 102, 102);
+}
+
+.target {
+  border: solid 10px rgb(169, 56, 56);
+}
